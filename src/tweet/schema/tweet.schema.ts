@@ -3,7 +3,7 @@ import { Document } from 'mongoose';
 
 export type TweetDocument = Tweet & Document;
 
-@Schema()
+@Schema({ timestamps: true })
 export class Tweet {
   @Prop({ unique: true })
   idUser: string;
@@ -11,6 +11,8 @@ export class Tweet {
   msg: string;
   @Prop()
   like: number;
+  @Prop({ default: Date.now })
+  createdAt: Date;
 }
 
 export const TweetSchema = SchemaFactory.createForClass(Tweet);
