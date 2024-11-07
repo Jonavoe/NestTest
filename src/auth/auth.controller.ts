@@ -27,28 +27,4 @@ export class AuthController {
     return this.authService.login(userObjectLogin);
   }
 
-  // @Post()
-  // create(@Body() LoginAuthDto: LoginAuthDto) {
-  //   return this.authService.create(LoginAuthDto);
-  // }
-
-  // @Get()
-  // findAll() {
-  //   return this.authService.findAll();
-  // }
-
-  // @Get(':id')
-  // findOne(@Param('id') id: string) {
-  //   return this.authService.findOne(+id);
-  // }
-
-  // @Patch(':id')
-  // update(@Param('id') id: string, @Body() RegisterAuthDto: RegisterAuthDto) {
-  //   return this.authService.update(+id, RegisterAuthDto);
-  // }
-
-  // @Delete(':id')
-  // remove(@Param('id') id: string) {
-  //   return this.authService.remove(+id);
-  // }
 }

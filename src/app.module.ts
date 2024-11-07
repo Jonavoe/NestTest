@@ -5,6 +5,7 @@ import { ItemsModule } from './items/items.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { TweetModule } from './tweet/tweet.module';
 
 require('dotenv').config();
 
@@ -14,6 +15,7 @@ require('dotenv').config();
     ItemsModule,
     AuthModule,
     UsersModule,
+    TweetModule,
   ],
   controllers: [AppController],
   providers: [AppService],
